@@ -57,6 +57,39 @@
 
 ![image](https://user-images.githubusercontent.com/82793713/179520538-adf71824-28f8-4a23-b1f9-561d63fe5b88.png)
 
+```C
+이때 stack_list[-1]은 맨 끝에 있는 값을 가지고 오는 거임(파이썬)
+```
+
+## 5. 링크드 리스트(Linked List)
+### 링크드 리스트 구조
+*  떨어진 곳에 존재하는 데이터를 화살표로 연결해서 관리하는 데이터 구조
+*  배열과 달리 미리 데이터를 예약하지 않고 필요할 때마다 추가 가능
+### 링크드 리스트 기본 구조와 용어
+*  노드(Node): 데이터 저장 단위(데이터값, 포인터)로 구성
+*  포인터(Pointer): 각 노드 안에서 다음이나 이전의 노드와의 연결 정보를 가지고 있는 공간
+
+![image](https://user-images.githubusercontent.com/82793713/179521183-e38acb43-7b71-47ce-a34e-5dfbfbabc819.png)
+![image](https://user-images.githubusercontent.com/82793713/179521188-3a8735f3-405c-4851-b944-2658fbd6801c.png)
+
+### 파이썬으로 링크드 리스트 구현해괴
+
+```C
+calss Node:
+   def __init__(self, data, next=None):
+      self.data = data
+      self.next = next
+
+class NodeMgmt:
+   def __init__(self, data): //생성자
+      self.head = Node(data) //생성자의 입력된 데이터가 링크드리스트의 헤드가 되는 거임
+   
+   def add(data): //링크드 리스트의 데이터 추가 메서드
+      node = self.head  //head를 설정
+      whiel node.next:  
+         node = node.next  //반복문을 탈출한 Node는 마지막 노드
+      node.next = Node(data)  //마지막 노드의 포인터에 추가하고자 하는 데이터 입력
+```
 
 
 
