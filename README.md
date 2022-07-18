@@ -133,5 +133,8 @@ class NodeMgmt:
 ![image](https://user-images.githubusercontent.com/82793713/179523930-ecc8b999-a485-4b43-83d2-1b806bf5d810.png)
 ![image](https://user-images.githubusercontent.com/82793713/179523938-4de3eb1b-33e4-46a7-991f-64de04d6d91d.png)
 
+#### 이때 시간 복잡도 함수가 2n^2 + 3n + 1이면 빅 오 표기법으로는 O(n^2)이다
+
+
 
 
