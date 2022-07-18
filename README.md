@@ -72,7 +72,7 @@
 ![image](https://user-images.githubusercontent.com/82793713/179521183-e38acb43-7b71-47ce-a34e-5dfbfbabc819.png)
 ![image](https://user-images.githubusercontent.com/82793713/179521188-3a8735f3-405c-4851-b944-2658fbd6801c.png)
 
-### 파이썬으로 링크드 리스트 구현해괴
+### 파이썬으로 링크드 리스트 구현해보기
 
 ```C
 calss Node:
@@ -113,6 +113,25 @@ class NodeMgmt:
          else:
             node = node.next
 ```
+
+## 6. 시간 복잡도
+### 알고리즘 복잡도 계산이 필요한 이유
+*  다양한 알고리즘 중 어느 알고리즘이 더 좋은지를 분석하기 위해 복잡도를 정의하고 계산함
+#### 알고리즘 시간 복잡도의 주요 요소 --> 반복문이 지배함
+
+### 알고리즘 성능 표기법
+*  Big O(빅 오) 포기법: O(N): 가장 자주 씀
+   *  알고리즘 최악의 실행 시간을 표기
+   *  가장 많이/일반적으로 사용함
+   *  아무리 최악의 상황이라도 이정도의 성능은 보장한다는 의미
+*  Ω (오메가) 표기법: Ω(N)
+   *  최상의 실행 시간을 표기
+*  Θ (세타) 표기법: Θ(N)
+   *  평균 실행 시간을 표기
+
+![image](https://user-images.githubusercontent.com/82793713/179523903-0d02961a-ff76-474c-9dfb-bb0994c47b72.png)
+![image](https://user-images.githubusercontent.com/82793713/179523930-ecc8b999-a485-4b43-83d2-1b806bf5d810.png)
+![image](https://user-images.githubusercontent.com/82793713/179523938-4de3eb1b-33e4-46a7-991f-64de04d6d91d.png)
 
 
 
