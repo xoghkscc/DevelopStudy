@@ -84,11 +84,34 @@ class NodeMgmt:
    def __init__(self, data): //생성자
       self.head = Node(data) //생성자의 입력된 데이터가 링크드리스트의 헤드가 되는 거임
    
-   def add(data): //링크드 리스트의 데이터 추가 메서드
+   def add(self, data): //링크드 리스트의 데이터 추가 메서드
       node = self.head  //head를 설정
       whiel node.next:  
          node = node.next  //반복문을 탈출한 Node는 마지막 노드
       node.next = Node(data)  //마지막 노드의 포인터에 추가하고자 하는 데이터 입력
+   
+   def delete(self, data): //링크드 리스트의 데이터 삭제 메서드
+      if self.head.data == data:    //만약 삭제하려는 데이터가 head라면
+         temp = self.head  //해드를 임시로 두고
+         self.head = temp.next   //헤드가 삭제되어야 하므로 헤드는 삭제되어야 할 헤드의 다음 노드
+         del temp //헤드 삭제
+      else:    //만약 삭제하려는 데이터가 head가 아니라면
+         node = self.head
+         while node.next:
+            if node.next.data == data: //삭제하려는 데이터를 찾은 경우
+               temp = node.next     
+               node.next = temp.next   //지우고자 하는 노드(A)의 next를 A의 앞 노드 next에 달아주는 당식
+               del temp  //노드 삭제
+            else:
+               node = node.nexgt //삭제하고자 하는 노드가 아니라면 다음 노드로 이동
+               
+   def get(self, data):    //원하는 데이터가 들어있는 노드의 주소값 찾기
+      node = self.head
+      while node.next:
+         if node.data == data:
+            return node
+         else:
+            node = node.next
 ```
 
 
