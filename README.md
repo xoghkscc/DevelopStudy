@@ -20,7 +20,7 @@
 ### 배열의 단점
 * 데이터의 추가/삭제가 어려움
 * 미리 최대 길이를 지정해야함 --> 비가변적
-* 
+
 ![image](https://user-images.githubusercontent.com/82793713/179519613-90c098fb-bfe7-4dc7-a780-34b2df2cb664.png)
 
 ## 3. 큐
@@ -30,6 +30,6 @@
 ### 알아둘 용어
 * Enqueue: 큐에 데이터를 넣는 기능
 * Dequeue: 큐에서 데이터를 꺼내는 기능
-* 
+
 ![image](https://user-images.githubusercontent.com/82793713/179519898-3610f5c7-9e7e-4d2d-8bae-c381c41d4b90.png)
 
